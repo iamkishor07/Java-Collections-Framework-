@@ -3,7 +3,7 @@ Added in java 1.2 Version
 Collections nothing but group of objects, present in java.util package
 Collections Framework provides us the architecture to mange "group of objects" i.e update,add,delete,search etc
 
-![img.png](img.png)
+![image](https://github.com/user-attachments/assets/ac9e162e-a654-40ed-9527-942cfa73830f)
 
 ![image](https://github.com/user-attachments/assets/1c4a668e-1384-4f70-8f06-0cd695b94005)
 
@@ -204,4 +204,5 @@ For ArrayList -> it's CopyOnWriteArrayList which is Thread SafeVersion
             -O(1) : deletion from end only
         -search
             -O(n) : Need to traverse whole stack , worst case need to traverse entire stack elements
-    
+![image](https://github.com/user-attachments/assets/55b5220e-e451-45ac-ab17-159c80d9b5de)
+
