@@ -3,7 +3,7 @@ Added in java 1.2 Version
 Collections nothing but group of objects, present in java.util package
 Collections Framework provides us the architecture to mange "group of objects" i.e update,add,delete,search etc
 
-![img.png](images/img.png)
+![img.png](img.png)
 
 ![image](https://github.com/user-attachments/assets/1c4a668e-1384-4f70-8f06-0cd695b94005)
 
@@ -139,7 +139,7 @@ For Priority Queue -> it's PriorityBlockingQueue which is Thread SafeVersion
 For ArrayDequee  -> It's ConcurrentLinkedDeque which is thread SafeVersion
 Has the behaviour of Concurrent insertion, removal, and access operations execute safely across multiple threads
 
-![img_1.png](images/img_1.png)
+![img_1.png](img_1.png)
 
 # List 
     -It's Ordered collection of objects, which allows duplicate values.
@@ -148,8 +148,8 @@ Has the behaviour of Concurrent insertion, removal, and access operations execut
     - where as in List Insertion,deletion & Acces can be happen at anywhere
     -In List those operation happens via index(Starting from  0)
     -Methods provided by in List Interface
-![img_2.png](images/img_2.png)
-![img_3.png](images/img_3.png)
+    ![img_2.png](img_2.png)
+    ![img_3.png](img_3.png)
     -Time Complexity
         -Insertion:
             -O(1): when inserting an element at the end of list , when space is sufficient
@@ -164,7 +164,7 @@ Has the behaviour of Concurrent insertion, removal, and access operations execut
 
 # Thread Safe Version of ArrayList
 For ArrayList -> it's CopyOnWriteArrayList which is Thread SafeVersion
-![img_4.png](images/img_4.png)
+![img_4.png](img_4.png)
 
 # LinkedList 
     - LinkedList is the concrete class, which implements both Dequeue & List Interface
@@ -180,14 +180,14 @@ For ArrayList -> it's CopyOnWriteArrayList which is Thread SafeVersion
             -O(n) : deletion at particular index for lookup O(n) + O(1) for removal
         -search 
             -O(n) : Need to traverse whole linkedlist in worst case
-![img_5.png](images/img_5.png)
+    ![img_5.png](img_5.png)
 # Vector
     -Exactly same as ArrayList,elements can be access via index
     -But it's Thread Safe
     -Puts lock on each & every Operation it performs on vector
     -Less efficient than arrayList as for each operation it do lock/unlock internally
     -Each & every method in vector is synchronized.
-![img_6.png](images/img_6.png)
+    ![img_6.png](img_6.png)
 # Stack
     -It's child concrete class of Vector class
     -we can achieve LIFO (principle ) through Dequeue , but that is not a threadSafe 
@@ -199,5 +199,5 @@ For ArrayList -> it's CopyOnWriteArrayList which is Thread SafeVersion
             -O(1) : deletion from end only
         -search
             -O(n) : Need to traverse whole stack , worst case need to traverse entire stack elements
-![img_7.png](images/img_7.png)
+    ![img_7.png](img_7.png)
     
