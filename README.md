@@ -46,7 +46,7 @@ Queue Interface provides the below methods
     - Provided by the Integer class, Integer class implements Comparable Interface, it provides/Overrides the compareTo() method
     - It picks up to sort the array , that compareTo() methods defines the Natural Ordering of the class.
 
-Arrays.sort(arr,(Integer val1,Integer val 2) -> val1 - val2)
+#Arrays.sort(arr,(Integer val1,Integer val 2) -> val1 - val2)
     -In here we provided custom comparator by lambda expression, It internally class the merge sort,
     -and that merge sort internally calls compare() method provided by the user,It will not pick the natural ordering
     -CompareTo() method, as the user provided the custom sorting logic comparator() method.
