@@ -206,3 +206,53 @@ For ArrayList -> it's CopyOnWriteArrayList which is Thread SafeVersion
             -O(n) : Need to traverse whole stack , worst case need to traverse entire stack elements
 ![image](https://github.com/user-attachments/assets/55b5220e-e451-45ac-ab17-159c80d9b5de)
 
+# Map
+![img_5](https://github.com/user-attachments/assets/8342b522-f6a7-4056-a620-5e05a38654eb)
+    -I'ts an interface & it's implementation's are
+        - HashMap: do not maintain the order
+        - HashTable: Synchronized version of HashMap
+        - LinkedHashMap : maintain insertion order / Maintain Access order
+        - TreeMap : sorts data internally
+    - Object that maps key to values.
+    - Cannot contain duplicate keys, even if you try to insert, it'll overwrrite it with new values.
+![img](https://github.com/user-attachments/assets/237dbe5a-7c5c-46a1-bcad-e282c3a59ea2)
+![img_1](https://github.com/user-attachments/assets/40507711-c1b0-40f2-96c1-cd5e1f338b5f)
+
+
+# Sorted Map
+    -Methods available in sorted Map Interface
+    -SortedMap<K,V> headMap(K key) -> returns all the values from start to the specifed key(exclusive)
+    -SortedMap<K,V> tailMap(K key) -> returns all the values from end to the specifed key(Inclusive)
+    -K firstKey() -> returns the first key
+    -K lastKey() -> returns the last key
+# Navigable Map
+![img_3](https://github.com/user-attachments/assets/90ac3e98-4627-4683-bea6-7bed95df40f4)
+![img_2](https://github.com/user-attachments/assets/ca2e0312-a235-434a-9a21-df76593561a4)
+![img_4](https://github.com/user-attachments/assets/96b1d503-b382-43e7-a686-9c1dda2a2d2d)
+
+# Set
+    -Set doesn't contain duplicates(Internally it uses hashMap) & it can have only 1 null value
+    -Set is unordered Collection,means objects inside set doesn't follow insertion order
+    -Unlike list,set can not be access via index.
+    -All methods declared in Collection Interface are only availbe in set Interface , No new method is added
+    
+    -Its Implementing classes are HashSet,LinkedHashSet, TreeSet
+# HashSet
+    -It doesn't maintain insertion order as it internally uses HashMap.
+    -As it uses HashMap ,It has key-value pair as 2 values,where as the hashSet contains only one value.
+    -During method invocation ,it stored the element in the key part & in value it stores the dummy Object
+    - map.put(element,new Object())
+    -It is not a thread safe(has hashMap is also not a threadsafe)
+    -newKeySet method present in concurrentHashMap class is used to create  threadSafe set
+    -It's time complexity is same as the hashMap,(Internally it implements it)
+# LinkedHashSet 
+    -It internally uses LinkedHashMap
+    -Maintains insertion Order of the elements,but not access order
+    -It is not a thread safe
+    -We can have threadsafe by using collections.synchronizedMap(new LinkedHashSet<>())
+    -Internally it adds synchronized keyword on it's method.
+# TreeSet
+    -It internally uses TreeMap
+    -It can not store null value,It is same as treemap
+
+    
